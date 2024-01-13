@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holygrail</title>
-    <link rel="stylesheet" href="styles/holygrail.css">
+    <title>Hannah Anderson - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Hannah Anderson's WDD 230 - Web Frontend Development course assignment portal. An index and home page for all projects and assignments in this course.">
+    <meta name="author" content="Hannah Anderson">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <h1>Home Index</h1>
+        <img src="" alt="Picture of Hannah Anderson"> <span>Hannah Anderson</span>
     </header>
-    <nav><a href="index.html">Home</a> | <a href="week01/holygrail.html">Holygrail</a> <a href="week01/media-query.html">Media Query Example</a></nav>
-    <br>
-    <main>Just a basic index page to make navigation of projects easier. I might pretty it up later.</main>
-    
+    <nav><a href="index.html" class="active">Home</a> <a href="">Chamber</a> <a href="">Site Plan</a> <a href="">Form</a></nav>
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a></li>
+                <li>Week 02: <a href=""></a></li>
+                <li>Week 03: <a href=""></a></li>
+                <li>Week 04: <a href=""></a></li>
+                <li>Week 05: <a href=""></a></li>
+                <li>Week 06: <a href=""></a></li>
+                <li>Week 07: <a href=""></a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <p>Weather:<span id="weather"></span></p>
+            <p>Page Visits:<span id="visits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Hannah Anderson | United States of America</p> 
+        <p id="lastModified"></p>
+    </footer>
+
+<script src="scripts/getDates.js"></script>
 </body>
 </html>
+
+<!--Need to do the profile photo lab, web lab css grid, step 3 css-->
