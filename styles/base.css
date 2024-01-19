@@ -34,6 +34,52 @@ nav {
     border-top: 2px solid rgb(0, 65, 65);
 }
 
+nav.closed {
+    border-bottom: 2px solid rgb(0, 65, 65);
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 44px;
+    text-align: center;
+    padding-bottom: 4px;
+    margin: .5rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menuButton:hover {
+    background: #ca7873;
+    border-radius: 5px;
+}
+
+#menuButton::before {
+    content: "\2630";
+}
+
+#menuButton.open::before {
+    content: "x"
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+nav li {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
 nav a {
     display: block;
     color: white;
@@ -58,6 +104,7 @@ main {
 h1 {
     font-weight: 700;
     color: rgb(0, 65, 65);
+    margin-top: .25rem;
 }
 
 hr {

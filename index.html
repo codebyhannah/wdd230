@@ -9,7 +9,7 @@
     <meta property="og:title" content="Hannah Anderson - WDD 230 - Web Frontend Development"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="images/rainbow.png"/>
-    <meta property="og:url" content="https://codebyhannah.github.io/wdd230/"/>    
+    <meta property="og:url" content="https://codebyhannah.github.io/wdd230/"/>
 
     <meta name="author" content="Hannah Anderson">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,17 @@
     <header>
         <img src="images/profile-small.jpg" alt="Picture of Hannah Anderson" class="profile"> <span>Hannah Anderson</span>
     </header>
-    <nav><a href="index.html" class="active">Home</a> <a href="">Chamber</a> <a href="">Site Plan</a> <a href="">Form</a></nav>
+
+    <nav class="topNav closed">
+        <button id="menuButton"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
@@ -31,7 +41,7 @@
             <h2>Learning Activities</h2>
             <ul>
                 <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week02/design.html">Design</a></li>
-                <li>Week 02: <a href=""></a></li>
+                <li>Week 02: <a href="https://codepen.io/snnnmsgb-the-solid/pen/rNRmWxm">Hamburger</a></li>
                 <li>Week 03: <a href=""></a></li>
                 <li>Week 04: <a href=""></a></li>
                 <li>Week 05: <a href=""></a></li>
@@ -51,5 +61,6 @@
     </footer>
 
 <script src="scripts/getDates.js"></script>
+<script src="scripts/hamburger.js"></script>
 </body>
 </html>

@@ -6,12 +6,21 @@
         margin: 1rem;
     }
 
-    nav {
+    nav.closed {
+        border-bottom: none;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
         display: flex;
     }
-    
-    nav a {
+
+    nav li{
         flex: 1 1 100%;
+        padding: 0;
     }
 
     h1 {
