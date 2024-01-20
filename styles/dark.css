@@ -11,26 +11,19 @@ header img.dark {
 }
 
 nav.dark {
-    background-color: four;
-    border-top: 2px solid darkcyan;
+    border-top: 2px solid rgb(50, 170, 170);
 }
 
 nav.closed.dark {
-    border-bottom: 2px solid darkcyan;
-}
-
-#menuButton.dark, #darkButton.dark {
-    color: two;
+    border-bottom: 2px solid rgb(50, 170, 170);
 }
 
 #menuButton.dark:hover, #darkButton.dark:hover {
-    background: white;
-    color: #ca7873;
+    background: #edaeab;
 }
 
 nav a.dark {
-    color: two;
-    border-bottom: 2px solid darkcyan;
+    border-bottom: 2px solid rgb(50, 170, 170);
 }
 
 nav.closed a.dark{
@@ -38,15 +31,11 @@ nav.closed a.dark{
 }
 
 nav a.dark:hover {
-    background-color: three;
-}
-
-nav .active.dark {
-    background-color: five;
+    background-color: rgb(50, 170, 170);
 }
 
 h1.dark {
-    color: darkcyan;
+    color: rgb(50, 170, 170);
 }
 
 hr.dark {
@@ -64,12 +53,12 @@ hr.dark {
 }
 
 .card a.dark {
-    color: rgb(0, 65, 65);
+    color: rgb(0, 55, 55);
 }
 .card a.dark:hover {
-    color: darkcyan;
+    color: rgb(50, 170, 170);
 }
 
 footer.dark {
-    color: darkcyan;
+    color: rgb(50, 170, 170);
 }
