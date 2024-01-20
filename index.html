@@ -17,7 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/dark.css">
     <link rel="icon" href="favicon.ico">
+
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/dark.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,6 +31,7 @@
     </header>
 
     <nav class="topNav closed">
+        <button id="darkButton">&#9775;</button>
         <button id="menuButton"></button>
         <ul class="menuLinks">
             <li><a href="index.html" class="active">Home</a></li>
@@ -59,8 +66,5 @@
         <p>&copy;<span id="year"></span> | Hannah Anderson | United States of America</p> 
         <p id="lastModified"></p>
     </footer>
-
-<script src="scripts/getDates.js"></script>
-<script src="scripts/hamburger.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+@media only screen and (max-width: 27rem) {
+    /* Prevents overlap of menuButton and darkButton with header span contents. */
+    header span {
+        max-width: 12.5rem;
+        word-wrap: break-word;
+    }
+}

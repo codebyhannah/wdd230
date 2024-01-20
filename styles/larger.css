@@ -14,6 +14,10 @@
         display: none;
     }
 
+    #darkButton {
+        top: 0;
+    }
+
     ul.menuLinks, ul.menuLinks.open{
         display: flex;
     }
@@ -22,7 +26,7 @@
         flex: 1 1 100%;
         padding: 0;
     }
-
+    
     h1 {
         grid-column: 1/3;
     }

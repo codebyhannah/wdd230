@@ -1,0 +1,74 @@
+body.dark {
+    background-color: black;
+}
+
+header.dark {
+    background-color: #ca7873;
+}
+
+header img.dark {
+    border: 2px solid #ffe7e5;
+}
+
+nav.dark {
+    background-color: four;
+    border-top: 2px solid darkcyan;
+}
+
+nav.closed.dark {
+    border-bottom: 2px solid darkcyan;
+}
+
+#menuButton.dark, #darkButton.dark {
+    color: two;
+}
+
+#menuButton.dark:hover, #darkButton.dark:hover {
+    background: #ffe7e5;
+}
+
+nav a.dark {
+    color: two;
+    border-bottom: 2px solid darkcyan;
+}
+
+nav.closed a.dark{
+    border: none;
+}
+
+nav a.dark:hover {
+    background-color: three;
+}
+
+nav .active.dark {
+    background-color: five;
+}
+
+h1.dark {
+    color: darkcyan;
+}
+
+hr.dark {
+    border: 1px solid rgb(0, 139, 139);
+}
+
+.card.dark {
+    border: 2px solid #ffe7e5;
+    background-color: #edaeab;
+}
+
+.card h2.dark {
+    background-color: #ca7873;
+    border-bottom: 2px solid #ffe7e5;
+}
+
+.card a.dark {
+    color: rgb(0, 65, 65);
+}
+.card a.dark:hover {
+    color: darkcyan;
+}
+
+footer.dark {
+    color: darkcyan;
+}
