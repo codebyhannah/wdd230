@@ -24,7 +24,8 @@ nav.closed.dark {
 }
 
 #menuButton.dark:hover, #darkButton.dark:hover {
-    background: #ffe7e5;
+    background: white;
+    color: #ca7873;
 }
 
 nav a.dark {
