@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 44px;
+    text-align: center;
+    margin: .5rem 2vw;
+    padding: 2px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menuButton:hover {
+    background: #ca7873;
+    border-radius: 5px;
+}
+
+#menuButton::before {
+    content: "\2630";
+}
+
+#menuButton.open::before {
+    content: "x"
+}
+
+ul.menuLinks {
+    display: none;
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+#topNav {
+    background-color: #5D4B61;
+}
+
+#topNav a {
+    color: white;
+}
+
+nav li {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
