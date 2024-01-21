@@ -1,6 +1,6 @@
 :root {
   --primary-color: #5D4B61;
-  --secondary-color: #a54e55;
+  --secondary-color: #A54E55;
   --accent1-color: #E4946D;
   --accent2-color: #E6D0C5;
   --accent3-color: #4B334E;
@@ -22,7 +22,7 @@
 body {
   max-width: 960px;
   margin: 0 auto;
-  padding: 4em;
+  padding: 4rem;
   font-size: 18px;
   text-align: center;
 }
@@ -40,19 +40,33 @@ hr {
   border: solid var(--accent1-color);
 }
 header {
-  padding: 1em;
+  padding: 1rem;
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+header h1, header h2 {
   color: var(--headline-color-on-color);
 }
-p {
+p, li {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
 }
+
+p {
+  padding: 1rem;
+}
+
+li {
+  padding: .5rem;
+}
+
+img.wireframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 38rem;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -64,13 +78,15 @@ p {
 }
 .colors td{
   width: 20%;
-  height: 3em;
+  height: 3rem;
 }
 .primary {
   background-color: var(--primary-color);
+  color: white;
 }
 .secondary {
   background-color: var(--secondary-color);
+  color: white;
 }
 .accent1 {
   background-color: var(--accent1-color);
@@ -80,6 +96,7 @@ p {
 }
 .accent3{
   background-color: var(--accent3-color);
+  color: white;
 }
 p.colored {
   background-color: var(--paragraph-background-color);
@@ -87,24 +104,28 @@ p.colored {
 }
 nav {
   background-color: var(--nav-background-color);
-  line-height: 3em;
+  line-height: 3rem;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 nav  {
   list-style-type: none;
   display: flex;
 }
 nav a {
-  padding:1em;
-  min-width: 120px;
+  padding: 1rem;
+  width: 100%;
   text-decoration: none;
   padding: 10px;
 }
-nav a:link, nav a:visited {
+nav a {
   color: var(--nav-link-color);
 }
 nav a:hover, nav a.active {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+li {
+  text-align: left;
 }
