@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer, main {
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+main {
+    max-width: 400px;
+}
+
+img {
+    display: block;
+    /* Background fades in with the image instead already existing as the image fades in. To fade in with background already existing, could put img in a div or other container with background. */
+    background: black;
+    animation: fadein 15s;
+    margin: 1rem auto;
+}
+
+div.colored {
+    background-color: black;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
