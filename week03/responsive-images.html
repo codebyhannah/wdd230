@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 assignment- responsive images srcset example demonstration">
+    <meta name="description" content="WDD 230 assignment responsive images srcset example demonstration">
     <meta name="author" content="Hannah Anderson">
     <title>Responsive Images</title>
     <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 <body>
     <main>
+        <nav>
+            <button><a href="../index.html">Home</a></button>
+        </nav>
         <div class="hero">
             <picture>
-                <source media="(min-width: )" srcset="">
-                <source media="(min-width: )" srcset="">
-                <img src="" alt="">
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Boise Idaho Temple side view" width="1500" height="750">
             </picture>
         </div>
     </main>
