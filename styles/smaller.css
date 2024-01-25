@@ -1,7 +1,14 @@
+/* According to https://accessally.com/blog/mobile-responsive-screen-sizes/ the smallest cell phone screen size commonly in use as of December 2023 is 320px, or 20rem. */
+
 @media only screen and (max-width: 27rem) {
     /* Avoids overlap of menuButton and darkButton with header span contents on smaller screens. */
     header span {
         max-width: 12.5rem;
         word-wrap: break-word;
+    }
+
+    .hero span {
+        top: 1rem;
+        left: 1rem;
     }
 }
