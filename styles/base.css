@@ -43,10 +43,13 @@ nav.closed {
     background: none;
     border: none;
     color: black;
+    background: #edaeab; /* Must color background or contrast checkers will use nav background color and may declare it to be bad contrast. */
+    border-radius: 10%;
     cursor: pointer;
     width: 44px;
     text-align: center;
     margin: .5rem 2vw;
+    
 }
 
 #menuButton:hover, #darkButton:hover {

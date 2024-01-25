@@ -18,6 +18,10 @@ nav.closed.dark {
     border-bottom: 2px solid rgb(50, 170, 170);
 }
 
+#menuButton.dark, #darkButton.dark {
+    background: #ca7873;
+}
+
 #menuButton.dark:hover, #darkButton.dark:hover {
     background: #edaeab;
 }
