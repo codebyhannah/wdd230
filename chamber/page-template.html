@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boise Chamber of Commerce</title>
+    <meta name="description" content="Conceptional Boise Chamber of Commerce home page created as a project for WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Hannah Anderson">
+    <meta property="og:title" content="Boise Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/100/white/grey" alt="logo placeholder" class="placeholder">
+        <h1>Boise<span class="smaller">Chamber of <span class="breakLine"></span>Commerce</span></h1>
+    </header>
+    <nav id="topNav">
+        <button id="menuButton"></button>
+        <ul class="menuLinks">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img class="hero">
+
+        <a href="#"><button class="join">Join Now</button></a>
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus suspendisse faucibus. Purus viverra accumsan in nisl nisi scelerisque eu. Diam vulputate ut pharetra sit amet aliquam. Quam elementum pulvinar etiam non quam lacus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Nisl pretium fusce id velit ut tortor. Tempor id eu nisl nunc mi ipsum faucibus. Viverra aliquet eget sit amet.</p>
+        </section>
+
+        <section class="spotlight">
+            <h2>Weekly Spotlights</h2>
+            <!-- One to three company 'spotlights' advertisements. -->
+            <div class="spotlight">
+                <h3>Lorem Ipsum</h3>
+                <p>Elit at imperdiet dui accumsan. Sed vulputate odio ut enim. Commodo sed egestas egestas fringilla. Integer malesuada nunc vel risus. In fermentum posuere urna nec tincidunt praesent semper. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Lorem Ipsum</h3>
+                <p>Magnam eos fugiat, eligendi blanditiis ab minus quam optio nam dolorem, asperiores aut perferendis sint incidunt molestiae nihil laudantium aperiam, repudiandae mollitia itaque magni? Ipsam officia quisquam reprehenderit esse ab dicta aperiam.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Lorem Ipsum</h3>
+                <p>Quas sit doloremque consequuntur neque, vero, at velit nesciunt quibusdam saepe magni possimus inventore ipsam iste non quisquam accusantium aliquid fugit veniam voluptatum. Voluptas debitis ab, eveniet modi corporis perspiciatis obcaecati, molestiae quos consequatur labore sapiente nulla quo.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contactUs">
+            <div class="logo">
+                <img src="https://placehold.co/90/white/grey" alt="logo placeholder" class="placeholder">
+                <div>
+                <h2>Boise<span class="smaller">Chamber of Commerce</span></h2>
+                <p>57 Fake Adress Lane</p>
+                <p>Boise,Idaho, USA</p>
+                </div>
+            </div>
+            <div class="contactInfo">
+                <p>fake@notarealemail.org</p>
+                <p>+1 (208) 999-9999</p>
+                <p><a href="#">Google Maps</a></p>
+            </div>
+        </div>
+        <p class="devInfo">&copy;<span id="year"></span> Boise Chamber | Hannah Anderson | WDD 230 Project</p>
+        <p class="devInfo"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

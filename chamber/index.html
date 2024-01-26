@@ -17,13 +17,16 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Boise Chamber of Commerce</h1>
+        <img src="https://placehold.co/100/white/grey" alt="logo placeholder" class="placeholder">
+        <h1>Boise<span class="smaller">Chamber of <span class="breakLine"></span>Commerce</span></h1>
     </header>
+    
     <main>
         <nav id="topNav">
             <button id="menuButton"></button>
@@ -34,33 +37,94 @@
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
-        <img class="hero">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="https://placehold.co/400x200">
+                <source media="(max-width: 800px)" srcset="https://placehold.co/800x400">
+                <img src="https://placehold.co/1100x400" alt="hero placeholder">
+            </picture>
+            <a href="#" class="join"><button  class="join"></button></a>
+        </div>
+        <div class="contents">
+            <section id="events" class="card">
+                <h2>Current Events</h2>
+                <div class="contents">
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus suspendisse faucibus. Purus viverra accumsan in nisl nisi scelerisque eu. Diam vulputate ut pharetra sit amet aliquam. Quam elementum pulvinar etiam non quam lacus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
+                </div>
+            </section>
+            <div class="side">
+                <section id="weather" class="card">
+                    <h2>Weather</h2>
+                    <div class="contents">
+                        <div class="weather">
+                            <img src="https://placehold.co/90/white/grey" alt="weather symbol placeholder" class="placeholder">
+                            <div class="details">
+                                <h3 class="weather">Sunny</h3>
+                                <h4 class="temp">56°F</h4>
+                                <h4 class="temp">13°C</h4>
+                            </div>
+                        </div>
+                        <p>Nisl pretium fusce id velit ut tortor. Tempor id eu nisl nunc mi ipsum faucibus. Viverra aliquet eget sit amet.</p>
+                    </div>
+                </section>
 
-        <a href="#"><button class="join">Join Now</button></a>
-
-        <section class="events">
-            <h2>Current Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar etiam non quam lacus suspendisse faucibus. Purus viverra accumsan in nisl nisi scelerisque eu. Diam vulputate ut pharetra sit amet aliquam. Quam elementum pulvinar etiam non quam lacus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
-        </section>
-
-        <section class="weather">
-            <h2>Weather</h2>
-            <p>Nisl pretium fusce id velit ut tortor. Tempor id eu nisl nunc mi ipsum faucibus. Viverra aliquet eget sit amet.</p>
-        </section>
-
-        <section class="spotlight">
-            <h2>Weekly Spotlights</h2>
-            <h3>Lorem Ipsum</h3>
-            <p>Elit at imperdiet dui accumsan. Sed vulputate odio ut enim. Commodo sed egestas egestas fringilla. Integer malesuada nunc vel risus. In fermentum posuere urna nec tincidunt praesent semper. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.</p>
-            <!-- One to three company 'spotlights' advertisements. -->
-        </section>
-
+                <section id="navCard" class="nav card">
+                    <div class="contents">
+                        <h2 class="link"><a href="index.html">Home</a></h2>
+                        <h3><a href="#events">Events</a></h3>
+                        <h3><a href="#weather">Weather</a></h3>
+                        <h3><a href="#spotlight">Spotlights</a></h3>
+                        <h4><a href="#">Spotlight 1</a></h4>
+                        <h4><a href="#">Spotlight 2</a></h4>
+                        <h4><a href="#">Spotlight 3</a></h4>
+                        <h2 class="link"><a href="#">Discover</a></h2>
+                        <h3><a href="#">Thing 1</a></h3>
+                        <h3><a href="#">Thing 2</a></h3>
+                        <h2 class="link"><a href="#">Directory</a></h2>
+                        <h2 class="link"><a href="#">Join</a></h2>
+                    </div>
+                </section>
+            </div>
+            <section id="spotlight" class="card">
+                <h2>Weekly Spotlights</h2>
+                <!-- One to three company 'spotlights' advertisements. -->
+                <div class="contents">
+                    <div class="spotlight">
+                        <h3><a href="#">Lorem Ipsum</a></h3>
+                        <p>Elit at imperdiet dui accumsan. Sed vulputate odio ut enim. Commodo sed egestas egestas fringilla. Integer malesuada nunc vel risus. In fermentum posuere urna nec tincidunt praesent semper. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.</p>
+                    </div>
+                    <div class="spotlight">
+                        <h3><a href="#">Lorem Ipsum</a></h3>
+                        <p>Magnam eos fugiat, eligendi blanditiis ab minus quam optio nam dolorem, asperiores aut perferendis sint incidunt molestiae nihil laudantium aperiam, repudiandae mollitia itaque magni? Ipsam officia quisquam reprehenderit esse ab dicta aperiam.</p>
+                    </div>
+                    <div class="spotlight">
+                        <h3><a href="#">Lorem Ipsum</a></h3>
+                        <p>Quas sit doloremque consequuntur neque, vero, at velit nesciunt quibusdam saepe magni possimus inventore ipsam iste non quisquam accusantium aliquid fugit veniam voluptatum. Voluptas debitis ab, eveniet modi corporis perspiciatis obcaecati, molestiae quos consequatur labore sapiente nulla quo.</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
     </main>
     <footer>
-        <div class="contact">Contact us: (info)</div>
-        <div class="developmentInfo">
-            <p>&copy;<span id="year"></span> Boise Chamber | Hannah Anderson | WDD 230 Project | <span id="lastModified"></span></p>
+        <div class="contactUs">
+            <div class="logo">
+                <img src="https://placehold.co/90/white/grey" alt="logo placeholder" class="placeholder">
+                <div>
+                <h2>Boise<span class="smaller">Chamber of Commerce</span></h2>
+                <p>57 Fake Adress Lane</p>
+                <p>Boise,Idaho, USA</p>
+                </div>
+            </div>
+            <div class="contactInfo">
+                <p>fake@notarealemail.org</p>
+                <p>+1 (208) 999-9999</p>
+                <p><a href="#">Google Maps</a></p>
+            </div>
         </div>
+        <p class="devInfo">&copy;<span id="year"></span> Boise Chamber | Hannah Anderson | WDD 230 Project</p>
+        <p class="devInfo"><span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
