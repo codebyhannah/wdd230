@@ -226,6 +226,14 @@ div.weather {
     display: none;
 }
 
+#navCard a{
+    color: var(--color-one);
+}
+
+#navCard a:hover {
+    color: var(--color-three);
+}
+
 footer {
     color: var(--color-six);
     background-color: var(--color-two);
