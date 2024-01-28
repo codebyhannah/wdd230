@@ -23,6 +23,14 @@
         top: 14rem;
         left: 1.5rem;
     }
+
+    button.join {
+        transition: font-size .25s;
+    }
+    
+    button.join:hover {
+        font-size: 1.1rem;
+    }
     
     button.join::before {
         content: "Join the Chamber Today";
@@ -91,14 +99,6 @@
         width: 105%;
         margin-left: -.5rem;
         box-shadow: -.5rem .5rem 1rem .125rem var(--color-two);
-    }
-
-}
-
-@media only screen and (min-width: 68.76rem) {
-
-    a.join {
-        left: calc((100vw - 1100px)/2 + 1.5rem);
     }
 
 }
