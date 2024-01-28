@@ -1,7 +1,11 @@
 @media only screen and (max-width: 25rem) {
 
     h1 .smaller .breakLine::before {
-        /* This way, since the text is set to nowrap in the base.css, 'Chamber of Commerce' will only wrap after 'of' and make two nice lines, rather than after both 'Chamber' and 'of', making three ugly lines */
+        /* This way, since the text is set to nowrap in 
+        the base.css, 'Chamber of Commerce' will only 
+        wrap after 'of' and make two nice lines, rather 
+        than after both 'Chamber' and 'of', making three 
+        ugly lines */
         content: "\a";
         white-space: pre;
     }
