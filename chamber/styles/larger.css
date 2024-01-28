@@ -35,6 +35,11 @@
         grid-gap: 1.5rem;
     }
 
+    main .contents.discover:not(.card .contents) {
+        grid-template-columns: 1fr 2fr;
+       grid-gap: 2.5rem;
+    }
+
     .card {
         margin-bottom: 0;
     }
@@ -48,9 +53,17 @@
         height: fit-content;
     }
 
+    div.side.discover {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    div.side .card:not(.card:last-of-type) {
+        margin-bottom: 1.5rem;;
+    }
+
     #weather {
         height: fit-content;
-        margin-bottom: 1.5rem;;
     }
 
     #navCard {
@@ -66,6 +79,18 @@
         
     #navCard h4 {
         padding-left: 40px;
+    }
+
+    .gallery div {
+        width: 100%;
+        transition: width .25s, box-shadow .25s, margin-left .25s;
+
+    }
+
+    .gallery div:hover {
+        width: 105%;
+        margin-left: -.5rem;
+        box-shadow: -.5rem .5rem 1rem .125rem var(--color-two);
     }
 
 }
