@@ -22,17 +22,14 @@
     a.join {
         top: 14rem;
         left: 1.5rem;
-    }
-
-    button.join {
         transition: font-size .25s;
     }
     
-    button.join:hover {
+    a.join:hover {
         font-size: 1.1rem;
     }
     
-    button.join::before {
+    a.join::before {
         content: "Join the Chamber Today";
     }
 
