@@ -1,33 +1,38 @@
+:root {
+    --color-nine: rgb(50, 170, 170);
+    --color-ten: rgb(0, 55, 55);
+}
+
 body.dark {
-    background-color: black;
+    background-color: var(--color-eight);
 }
 
 header.dark {
-    background-color: #ca7873;
+    background-color: var(--color-four);
 }
 
 header img.dark {
-    border: 2px solid #ffe7e5;
+    border: var(--border-type-one) var(--color-two);
 }
 
 nav.dark {
-    border-top: 2px solid rgb(50, 170, 170);
+    border-top: var(--border-type-one) var(--color-nine);
 }
 
 nav.closed.dark {
-    border-bottom: 2px solid rgb(50, 170, 170);
+    border-bottom: var(--border-type-one) var(--color-nine);
 }
 
 #menuButton.dark, #darkButton.dark {
-    background: #ca7873;
+    background: var(--color-four);
 }
 
 #menuButton.dark:hover, #darkButton.dark:hover {
-    background: #edaeab;
+    background: var(--color-three);
 }
 
 nav a.dark {
-    border-bottom: 2px solid rgb(50, 170, 170);
+    border-bottom: var(--border-type-one) var(--color-nine);
 }
 
 nav.closed a.dark{
@@ -35,34 +40,34 @@ nav.closed a.dark{
 }
 
 nav a.dark:hover {
-    background-color: rgb(50, 170, 170);
+    background-color: var(--color-nine);
 }
 
 h1.dark {
-    color: rgb(50, 170, 170);
+    color: var(--color-nine);
 }
 
 hr.dark {
-    border: 1px solid rgb(0, 139, 139);
+    border: 1px solid var(--color-nine);
 }
 
 .card.dark {
-    border: 2px solid #ffe7e5;
-    background-color: #edaeab;
+    border: var(--border-type-one) var(--color-two);
+    background-color: var(--color-three);
 }
 
 .card h2.dark {
-    background-color: #ca7873;
-    border-bottom: 2px solid #ffe7e5;
+    background-color: var(--color-four);
+    border-bottom: var(--border-type-one) var(--color-two);
 }
 
 .card a.dark {
-    color: rgb(0, 55, 55);
+    color: var(--color-ten);
 }
 .card a.dark:hover {
-    color: rgb(50, 170, 170);
+    color: var(--color-nine);
 }
 
 footer.dark {
-    color: rgb(50, 170, 170);
+    color: var(--color-nine);
 }

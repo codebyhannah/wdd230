@@ -4,15 +4,28 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-one: white;
+    --color-two: #ffe7e5;
+    --color-three: #edaeab;
+    --color-four: #ca7873;
+    --color-five: darkcyan;
+    --color-six: rgb(0, 95, 95);
+    --color-seven: rgb(0, 65, 65);
+    --color-eight: black;
+
+    --border-type-one: 2px solid;
+}
+
 body {
-    background-color: white;
+    background-color: var(--color-one);
     font-family: "Rajdhani", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 header {
-    background-color: #edaeab;
+    background-color: var(--color-three);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,25 +38,25 @@ header span {
 }
 
 header img {
-    border: 2px solid #ca7873;
+    border: var(--border-type-one) var(--color-four);
     border-radius: 10px;
 }
 
 nav {
-    background-color: rgb(0, 95, 95);
-    border-top: 2px solid rgb(0, 65, 65);
+    background-color: var(--color-six);
+    border-top: var(--border-type-one) var(--color-seven);
 }
 
 nav.closed {
-    border-bottom: 2px solid rgb(0, 65, 65);
+    border-bottom: var(--border-type-one) var(--color-seven);
 }
 
 #menuButton, #darkButton {
     font-size: 2rem;
     background: none;
     border: none;
-    color: black;
-    background: #edaeab; /* Must color background or contrast checkers will use nav background color and may declare it to be bad contrast. */
+    color: var(--color-eight);
+    background: var(--color-three); /* Must color background or contrast checkers will use nav background color and may declare it to be bad contrast. */
     border-radius: 10%;
     cursor: pointer;
     width: 44px;
@@ -53,7 +66,7 @@ nav.closed {
 }
 
 #menuButton:hover, #darkButton:hover {
-    background: #ca7873;
+    background: var(--color-four);
     border-radius: 5px;
 }
 
@@ -95,19 +108,19 @@ nav li {
 
 nav a {
     display: block;
-    color: white;
+    color: var(--color-one);
     text-align: center;
     padding: .5rem;
     text-decoration: none;
-    border-bottom: 2px solid rgb(0, 65, 65);
+    border-bottom: var(--border-type-one) var(--color-seven);
 }
 
 nav a:hover {
-    background-color: darkcyan;
+    background-color: var(--color-five);
 }
 
 nav .active {
-    background-color: rgb(0, 65, 65);
+    background-color: var(--color-seven);
 }
 
 main {
@@ -118,19 +131,19 @@ main {
 
 h1 {
     font-weight: 700;
-    color: rgb(0, 65, 65);
+    color: var(--color-seven);
     margin-top: .25rem;
 }
 
 hr {
     grid-column: 1/3;
     margin-bottom: 1rem;
-    border: 1px solid rgb(0, 65, 65);
+    border: 1px solid var(--color-seven);
 }
 
 .card {
-    border: 2px solid #ca7873;
-    background-color: #ffe7e5;
+    border: var(--border-type-one) var(--color-four);
+    background-color: var(--color-two);
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1rem;
@@ -139,8 +152,8 @@ hr {
 .card h2 {
     text-align: center;
     padding: .75rem;
-    background-color: #edaeab;
-    border-bottom: 2px solid #ca7873;
+    background-color: var(--color-three);
+    border-bottom: var(--border-type-one) var(--color-four);
     font-weight: 600;
 }
 
@@ -153,16 +166,22 @@ hr {
 }
 
 .card a {
-    color: rgb(0, 65, 65);
+    color: var(--color-seven);
 }
 .card a:hover {
-    color: darkcyan;
+    color: var(--color-five);
 }
 
 footer {
     font-weight: 400;
-    color: rgb(0, 65, 65);
+    color: var(--color-seven);
     text-align: center;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+footer p{
+    padding: .2rem;
 }
 
 .hero {
@@ -184,16 +203,19 @@ footer {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    background: radial-gradient(white, #ffe7e5);
+    background: radial-gradient(var(--color-one), var(--color-two));
     opacity: 0.6;
-    border: 2px solid #ca7873;
+    border: var(--border-type-one) var(--color-four);
     border-radius: 10px;
     padding: 1rem;
     white-space: nowrap;
 }
 
 .map iframe{
-    /*  If the iframe width and height are not set to 100% and !important, the map either doesn't fill the whole area, or takes up too much space, ignoring the css. */
+    /*  If the iframe width and height are not set to 
+    100% and !important, the map either doesn't fill the 
+    whole area, or takes up too much space, ignoring the 
+    css. */
     width: 100% !important;
     height: 100% !important;
 }
@@ -203,4 +225,14 @@ footer {
     width: 100%;
     height: 15rem;
     margin: 1rem auto;
+}
+
+main.form, main.record {
+    display: block;
+    text-align: center;
+}
+
+main.record {
+    padding: 5rem;
+    margin-top: 1rem;
 }

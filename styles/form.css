@@ -1,0 +1,40 @@
+form {
+    display: block;
+    margin: 2rem auto;
+    max-width: 480px;
+}
+
+form fieldset.card {
+    box-shadow: none;
+}
+
+form label, form label input {
+    font-size: 1.2rem;
+    text-align: left;
+    display: block;
+    padding: .5rem;
+    width: 100%;
+}
+
+form label input {
+    border: 2px solid var(--color-four);
+    border-radius: 5px;
+}
+
+form label input:not(input:focus) {
+    background-color: #e5e5e5;
+}
+
+form input[type="submit"].card {
+    padding: 1rem;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+form label input:required {
+    border-left: 6px solid red;
+}
+
+form label input:required:valid {
+    border-left: 6px solid green;
+}
