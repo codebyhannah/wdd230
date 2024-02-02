@@ -161,6 +161,11 @@ main .contents:not(.card .contents) {
     display: block;
 }
 
+main .contents.thank h2{
+    text-align: center;
+    margin: 4rem 0;
+}
+
 .card {
     color: var(--color-one);
     border: 2px solid var(--color-two);
@@ -331,3 +336,66 @@ footer .devInfo {
     font-size: 1.125rem;
 }
 
+.contents.form .side {
+    height: fit-content;
+}
+
+form {
+    display: block;
+    max-width: 480px;
+    text-align: center
+}
+
+form fieldset.card {
+    box-shadow: none;
+    margin-bottom: 1rem;
+}
+
+form label:not(.sbs), form div {
+    font-family: var(--fancier-font);
+}
+
+form label, form label input:not(.sbs input), form div {
+    font-size: 1.1rem;
+    text-align: left;
+    display: block;
+    padding: .5rem;
+    width: 100%;
+}
+
+form label input, form label textarea {
+    font-family: var(--general-font);
+    margin-top: .1rem;
+    border: 2px solid var(--color-two);
+    border-radius: 5px;
+}
+
+form label textarea {
+    width: 100%;
+    min-height: 5rem;
+    resize: vertical;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+form label.sbs input {
+    margin-left: 1rem;
+}
+
+form label input:not(input:focus), form label textarea:not(textarea:focus) {
+    background-color: #e5e5e5;
+}
+
+form input[type="submit"].card {
+    padding: 1rem;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+form label input:required {
+    border-left: 6px solid red;
+}
+
+form label input:required:valid {
+    border-left: 6px solid green;
+}

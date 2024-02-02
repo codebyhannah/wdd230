@@ -33,7 +33,7 @@
         content: "Join the Chamber Today";
     }
 
-    main .contents:not(.card .contents) {
+    main .contents:not(.card .contents, .contents.thank) {
         padding: 2rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -42,7 +42,7 @@
 
     main .contents.discover:not(.card .contents) {
         grid-template-columns: 1fr 2fr;
-       grid-gap: 2.5rem;
+        grid-gap: 2.5rem;
     }
 
     .card {
@@ -58,7 +58,7 @@
         height: fit-content;
     }
 
-    div.side.discover {
+    div.side.left {
         grid-column: 1/2;
         grid-row: 1/2;
     }

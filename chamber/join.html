@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boise Chamber of Commerce | Join</title>
+    <meta name="description" content="Join page for Boise Chamber of Commerce WDD 230 - Web Frontend Development project.">
+    <meta name="author" content="Hannah Anderson">
+    <meta property="og:title" content="Boise Chamber of Commerce | Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1100x400">
+    <meta property="og:url" content="https://codebyhannah.github.io/wdd230/chamber/join.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://placehold.co/100/white/grey" alt="logo placeholder" class="placeholder">
+        <h1>Boise <span class="smaller">Chamber of <span class="breakLine"></span>Commerce</span></h1>
+    </header>
+    
+    <main>
+        <nav id="topNav">
+            <button id="menuButton"></button>
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+        <div class="contents form">
+            <form method="get" action="thankyou.html">
+                <fieldset class="card">
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label>Title or Position* <input type="text" id="title" name="title" pattern="" required></label>
+                    <label>Email* <input type="email" id="email" name="email" title="Please enter a valid email address" required placeholder="somebody@gmail.com"></label>
+                    <label>Mobile Phone Number* <input type="tel" id="phone" name="phone" required></label>
+                    <label>Business/Organization Name* <input type="text" id="bname" name="bname" required></label>
+                    
+                    <div>Membership Level</div>
+                    <label class="sbs"><input type="radio" name="memlevel" value="np"> Non-Profit Membership</label>
+                    <label class="sbs"><input type="radio" name="memlevel" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="memlevel" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="memlevel" value="gold"> Gold Membership</label>
+
+                    <label>Business/Organization Description <textarea id="description" name="description"></textarea></label>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                </fieldset>
+    
+                <input type="submit" value="Join the Chamber" class="card">
+            </form>
+            <div class="side">
+                <section class="card">
+                <h2>Membership Benefits</h2>
+                <div class="contents">
+                    <h3>Non-Profit Membership</h3>
+                    <p>Fee: None</p>
+                    <p>Benefits go here~</p>
+                    <h3>Bronze Membership</h3>
+                    <p>Fee: $300 per Year</p>
+                    <p>Benefits go here~</p>
+                    <h3>Silver Membership</h3>
+                    <p>Fee: $400 per Year</p>
+                    <p>Benefits go here~</p>
+                    <h3>Gold Membership</h3>
+                    <p>Fee: $500 per Year</p>
+                    <p>Benefits go here~</p>
+                </div>
+            </section>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="contactUs">
+            <div class="logo">
+                <img src="https://placehold.co/90/white/grey" alt="logo placeholder" class="placeholder">
+                <div>
+                <h2>Boise <span class="smaller">Chamber of Commerce</span></h2>
+                <p>57 Fake Adress Lane</p>
+                <p>Boise,Idaho, USA</p>
+                </div>
+            </div>
+            <div class="contactInfo">
+                <p>fake@notarealemail.org</p>
+                <p>+1 (208) 999-9999</p>
+                <p><a href="#">Google Maps</a></p>
+            </div>
+        </div>
+        <p class="devInfo">&copy;<span id="year"></span> Boise Chamber | Hannah Anderson | WDD 230 Project</p>
+        <p class="devInfo"><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
