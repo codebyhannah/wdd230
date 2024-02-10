@@ -1,0 +1,33 @@
+{
+    "familyName": "Olson",
+    "dateMovedIn": "2024-02-06",
+    "numPeople": "5",
+    "visited": "true",
+    "familyMembers": [
+        {
+            "name": "John Olson",
+            "gender": "Male",
+            "birthdate": "1989-11-14"
+        },
+        {
+            "name": "Amy Rose Olson",
+            "gender": "Female",
+            "birthdate": "1995-09-30"
+        },
+        {
+            "name": "Nick James Olson",
+            "gender": "Male",
+            "birthdate": "2017-07-24"
+        },
+        {
+            "name": "Emery May Olson",
+            "gender": "Female",
+            "birthdate": "2019-12-06"
+        },
+        {
+            "name": "Jason Ryan Olson",
+            "gender": "Male",
+            "birthdate": "2023-04-13"
+        }
+    ]
+}
