@@ -8,7 +8,6 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -24,7 +23,6 @@ function displayResults(data) {
     let desc = data.weather[0].description.toLowerCase().replace(/\b\w/g, s => s.toUpperCase()); // I looked up how to do title case because it didn't look as nice all lowercase.
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", desc);
-
     weatherSpan.innerHTML = `${currentTemp} - ${desc}`;
 }
 

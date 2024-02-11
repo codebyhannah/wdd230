@@ -238,7 +238,10 @@ main.record {
 }
 
 img.weather-icon {
-    /*background-color: white;*/
     margin-bottom: -.8rem;
     margin-right: .2rem;
+}
+
+.card.info {
+    text-align: center;
 }

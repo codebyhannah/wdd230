@@ -55,19 +55,11 @@
         <hr>
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>Week 01: <a href="week01/holygrail.html" target="_blank">Layout</a> | <a href="week01/media-query.html" target="_blank">Media Query</a> | <a href="week01/chamber-site-plan.html" target="_blank">Chamber Site Plan</a></li>
-                <li>Week 02: <a href="https://codepen.io/snnnmsgb-the-solid/pen/rNRmWxm" target="_blank">Hamburger</a> | <a href="week02/bom.html" target="_blank">DOM Manipulation</a> | <a href="week02/design.html" target="_blank">Design</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a> | <a href="week03/lazyload.html" target="_blank">Lazy Load</a> | <a href="week03/responsive-images.html" target="_blank">Responsive Images</a> | <a href="week03/bom.html" target="_blank">localStorage</a></li>
-                <li>Week 04: <a href="https://codepen.io/snnnmsgb-the-solid/pen/bGZaOOB?editors=0110" target="_blank">Psuedo-classes</a> | <a href="week04/images/week04-combinators-screenshot.png" target="_blank">CSS Combinators</a> | <a href="week04/tablebuild.html" target="_blank">HTML Tables</a> | <a href="week04/form/index.html" target="_blank">Form</a></li>
-                <li>Week 05: <a href="https://codepen.io/snnnmsgb-the-solid/pen/yLwqJez" target="_blank">Psuedo-elements</a> | <a href="week05/new-ward-members.json" target="_blank">JSON</a> | <a href="week05/prophets.html" target="_blank">Fetch</a> | <a href="week05/weather.html" target="_blank">Weather</a></li>
-                <li>Week 06: </li>
-                <li>Week 07: </li>
-            </ul>
+            <ul class="learningActs"></ul>
         </section>
-        <section class="card">
+        <section class="card info">
             <h2>Information</h2>
-            <p><img class="weather-icon"><span id="weather"></span></p>
+            <p><img class="weather-icon" src="none" alt="Error in Displaying Weather"><!--src has to be set if I don't want the HTML Validator to be mad that it's empty. alt is set to "Error" because if the src and alt don't get changed by the js then there's definitely been an error--><span id="weather"></span></p>
             <p>Page Visits: <span id="visits"></span></p>
         </section>
 
