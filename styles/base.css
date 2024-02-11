@@ -236,3 +236,9 @@ main.record {
     padding: 5rem;
     margin-top: 1rem;
 }
+
+img.weather-icon {
+    /*background-color: white;*/
+    margin-bottom: -.8rem;
+    margin-right: .2rem;
+}
