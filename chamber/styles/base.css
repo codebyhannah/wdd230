@@ -399,3 +399,33 @@ form label input:required {
 form label input:required:valid {
     border-left: 6px solid green;
 }
+
+#gridListButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 44px;
+    text-align: center;
+    margin: .5rem 2vw;
+    padding-bottom: 4px;
+    /*
+    position: absolute;
+    top: .7rem;
+    right: -.3rem;
+    */
+}
+
+#gridListButton:hover {
+    background: var(--color-four);
+    border-radius: 5px;
+}
+
+#gridListButton::before {
+    content: "\2630";
+}
+
+#gridListButton.list::before {
+    content: "x"
+}

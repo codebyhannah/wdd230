@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Fake Company Number 1",
+            "address": "12",
+            "phoneNum": "1231231234",
+            "url": "https://notarealurl.html",
+            "image": "https://placehold.co/100/lightgrey/grey",
+            "memLevel": "Gold",
+            "other": "This is a fake company."
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phoneNum": "",
+            "url": "",
+            "image": "",
+            "memLevel": "",
+            "other": ""
+        }
+    ]
+}
