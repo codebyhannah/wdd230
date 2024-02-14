@@ -2,66 +2,66 @@
     "members": [
         {
             "name": "Fake Company Number 1",
-            "address": "12",
-            "phoneNum": "1231231234",
+            "address": "12 fakestreet St.",
+            "phoneNum": "+1 (123) 123-1234",
             "url": "https://notarealurl.html",
-            "image": "https://placehold.co/100/lightgrey/grey",
+            "image": "https://placehold.co/250x125/white/grey",
             "memLevel": "Gold",
             "other": "This is a fake company."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 2",
+            "address": "13 fakestreet St.",
+            "phoneNum": "(123) 123-1235",
+            "url": "https://notarealurlatall.html",
+            "image": "https://placehold.co/150x100/white/grey",
+            "memLevel": "Bronze",
+            "other": "This is also a fake company."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 3",
+            "address": "14 fakestreet St.",
+            "phoneNum": "(123) 123-1236",
+            "url": "https://totallyfakeurl.html",
+            "image": "https://placehold.co/100/white/grey",
+            "memLevel": "Silver",
+            "other": "This is yet another fake company."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 4",
+            "address": "15 fakestreet St.",
+            "phoneNum": "+1 (123) 123-1237",
+            "url": "https://stillafakeurl.html",
+            "image": "https://placehold.co/225x150/white/grey",
+            "memLevel": "Gold",
+            "other": "Fake company stil."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 5",
+            "address": "16 fakestreet St.",
+            "phoneNum": "(123) 123-1238",
+            "url": "https://sofakeurl.html",
+            "image": "https://placehold.co/200x75/white/grey",
+            "memLevel": "Non-Profit",
+            "other": "This is a very fake company."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 6",
+            "address": "17 fakestreet St.",
+            "phoneNum": "+1 (123) 123-1239",
+            "url": "https://notrealnopeurl.html",
+            "image": "https://placehold.co/200x100/white/grey",
+            "memLevel": "Bronze",
+            "other": "An exceedingly fake company."
         },
         {
-            "name": "",
-            "address": "",
-            "phoneNum": "",
-            "url": "",
-            "image": "",
-            "memLevel": "",
-            "other": ""
+            "name": "Fake Company Number 7",
+            "address": "18 fakestreet St.",
+            "phoneNum": "+1 (123) 123-1230",
+            "url": "https://fakeurlyall.html",
+            "image": "https://placehold.co/180x120/white/grey",
+            "memLevel": "Silver",
+            "other": "This fake company is so fake."
         }
     ]
 }

@@ -1,33 +1,53 @@
 const baseUrl = "https://codebyhannah.github.io/wdd230/";
-const linksUrl = "https://codebyhannah.github.io/wdd230/chamber/data/members.json";
+const membersUrl = "https://codebyhannah.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
-    const response = await fetch(linksUrl);
+    const response = await fetch(membersUrl);
     const data = await response.json();
-    displayLinks(data);
+    console.log(data);
+    displayMembers(data);
 }
 
-const linksList = document.querySelector(".learningActs")
+const directory = document.querySelector("#directory");
 
-function displayLinks(data) {
-    data.weeks.forEach(week => {
-        let listWeek = document.createElement("li");
-        let weekNum = document.createElement("span");
-        weekNum.innerText = `${week.week}: `;
-        listWeek.appendChild(weekNum);
-        week.links.forEach(link => {
-            const aLink = document.createElement("a");
-            aLink.setAttribute("href", link.url);
-            aLink.setAttribute("target", "_blank");
-            aLink.innerText = link.title;
-            listWeek.appendChild(aLink);
-            if (week.links.indexOf(link) != week.links.length-1)
-            {
-                listWeek.innerHTML += " | ";
-            }
-        });
-        linksList.appendChild(listWeek);
+function displayMembers(data) {
+    data.members.forEach(member => {
+        const section = document.createElement("section");
+        section.setAttribute("class", "card");
+
+        let name = member.name;
+        let address = member.address;
+        let phoneNum = member.phoneNum;
+        let url = member.url;
+        let imageSrc = member.image;
+
+        section.innerHTML = `<div class="contents"><img src="${imageSrc}" alt="${name}"><p class="name">${name}</p><p class="address">${address}</p><p class="phoneNum">${phoneNum}</p><p class="url">${url}</p></div>`;
+
+        directory.appendChild(section);
     });
 }
 
-getLinks();
+getMembers();
+
+const gridButton = document.querySelector("#gridButton");
+const listButton = document.querySelector("#listButton");
+const gridListElement = document.querySelector("#directory");
+
+function gridToggle() {
+    gridButton.classList.toggle("grid");
+    listButton.classList.toggle("list");
+}
+
+gridButton.addEventListener("click", () => {
+    gridButton.classList.add("grid");
+    listButton.classList.remove("list");
+    gridListElement.classList.add("grid");
+    gridListElement.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    listButton.classList.add("list");
+    gridButton.classList.remove("grid");
+    gridListElement.classList.add("list");
+    gridListElement.classList.remove("grid");
+});

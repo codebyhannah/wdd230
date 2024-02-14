@@ -154,7 +154,7 @@ a.join::before {
     content: "Join Today";
 }
 
-main .contents:not(.card .contents) {
+main .contents:not(.card .contents, .directory) {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1rem;
@@ -175,7 +175,7 @@ main .contents.thank h2{
     margin-bottom: 1.5rem;
 }
 
-.card h2:not(.link) {
+.card h2:not(.link, #directory section h2) {
     text-align: center;
     padding: .75rem;
     color: var(--color-six);
@@ -297,6 +297,8 @@ footer .devInfo {
     margin-top: 1rem;
 }
 
+/* ----- Gallery ----- */
+
 .gallery h2 {
     font-size: 2rem;
     padding-left:2rem;
@@ -335,6 +337,8 @@ footer .devInfo {
     font-family: var(--fancier-font);
     font-size: 1.125rem;
 }
+
+/* ----- Form ----- */
 
 .contents.form .side {
     height: fit-content;
@@ -400,32 +404,132 @@ form label input:required:valid {
     border-left: 6px solid green;
 }
 
-#gridListButton {
+/* ----- Directory ----- */
+
+main div.contents.directory {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-gap: 0;
+}
+
+.direcButtons {
+    grid-column: 2/3;
+    width: max-content;
+    margin: 0 1rem;
+}
+
+#directory {
+    grid-column: 1/3;
+}
+
+#gridButton, #listButton {
     font-size: 2rem;
-    background: none;
+    background: var(--color-five);
     border: none;
-    color: black;
+    color: var(--color-one);
     cursor: pointer;
     width: 44px;
     text-align: center;
-    margin: .5rem 2vw;
-    padding-bottom: 4px;
-    /*
-    position: absolute;
-    top: .7rem;
-    right: -.3rem;
-    */
+    margin: .5rem 0;
 }
 
-#gridListButton:hover {
+#gridButton {
+    padding: 0 6px 4px 3px;
+    border-left: 1px solid var(--color-one);
+    border-radius: 0 5px 5px 0;
+}
+
+#listButton {
+    padding: 0 3px 4px 6px;
+    border-right: 1px solid var(--color-one);
+    border-radius: 5px 0 0 5px;
+}
+
+#gridButton.grid, #listButton.list {
     background: var(--color-four);
-    border-radius: 5px;
 }
 
-#gridListButton::before {
+#gridButton:hover, #listButton:hover {
+    background: var(--color-three);
+    color: var(--color-six);
+}
+
+#listButton::before {
     content: "\2630";
 }
 
-#gridListButton.list::before {
-    content: "x"
+#gridButton::before {
+    content: "\229E";
+}
+
+#directory section.card p{
+    margin: 0;
+    padding: 0;
+}
+
+#directory section.card p:not(p:last-of-type) {
+    margin-bottom: .5rem;
+}
+
+/* ----- Directory Grid View ----- */
+
+#directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+#directory.grid section.card {
+    text-align: center;
+    max-width: 340px;
+    min-width: 288px;
+    height: 248px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .3rem .5rem .125rem var(--color-two);
+    margin: auto;
+}
+
+#directory.grid section.card p.name {
+    display: none;
+}
+
+#directory.grid section.card img{
+    margin-bottom: 1rem;
+    max-height: 135px;
+    width: auto;
+}
+
+/* ----- Directory List View ----- */
+
+#directory.list {
+    display: block;
+    width: 100%;
+}
+
+#directory.list section.card {
+    border-radius: 0;
+    border: none;
+    margin: 0;
+}
+
+#directory.list section.card:nth-child(even){
+    background-color: var(--color-six);
+}
+
+#directory.list section.card .contents {
+    text-align: left;
+}
+
+#directory.list section.card p {
+    max-width: fit-content;
+    word-break: break-word;
+}
+
+#directory.list section.card img {
+    display: none;
 }

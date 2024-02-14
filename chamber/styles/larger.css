@@ -33,7 +33,7 @@
         content: "Join the Chamber Today";
     }
 
-    main .contents:not(.card .contents, .contents.thank) {
+    main .contents:not(.card .contents, .contents.thank, .contents.directory) {
         padding: 2rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -86,6 +86,8 @@
         padding-left: 40px;
     }
 
+    /* ----- Gallery ----- */
+
     .gallery div {
         width: 100%;
         transition: width .25s, box-shadow .25s, margin-left .25s;
@@ -97,8 +99,24 @@
         margin-left: -.5rem;
         box-shadow: -.5rem .5rem 1rem .125rem var(--color-two);
     }
+
+    /* ----- Form ----- */
     
     form {
         margin: 0 auto;
     }
+
+    /* ----- Directory List View ----- */
+
+    #directory.list section.card .contents {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(52px, 1fr));
+        grid-gap: .5rem;
+        text-align: left;
+    }
+
+    #directory.list section.card p:not(p:last-of-type) {
+        margin: 0;
+    }
+
 }

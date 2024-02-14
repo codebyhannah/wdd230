@@ -7,7 +7,7 @@ async function getLinks() {
     displayLinks(data);
 }
 
-const linksList = document.querySelector(".learningActs")
+const linksList = document.querySelector(".learningActs");
 
 function displayLinks(data) {
     data.weeks.forEach(week => {
