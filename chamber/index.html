@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/extra-large.css">
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer> </script>
 </head>
 <body>
     <header>
@@ -58,15 +59,9 @@
                 <section id="weather" class="card">
                     <h2>Weather</h2>
                     <div class="contents">
-                        <div class="weather">
-                            <img src="https://placehold.co/90/white/grey" alt="weather symbol placeholder" class="placeholder">
-                            <div class="details">
-                                <h3 class="weather">Sunny</h3>
-                                <h4 class="temp">56°F</h4>
-                                <h4 class="temp">13°C</h4>
-                            </div>
-                        </div>
-                        <p>Nisl pretium fusce id velit ut tortor. Tempor id eu nisl nunc mi ipsum faucibus. Viverra aliquet eget sit amet.</p>
+                        <div class="date"></div>
+                        <div class="weather"></div>
+                        <div class="forecast"></div>
                     </div>
                 </section>
 
@@ -86,7 +81,7 @@
                 </section>
             </div>
             <section id="spotlight" class="card">
-                <h2>Weekly Spotlights</h2>
+                <h2>Spotlights</h2>
                 <!-- One to three company 'spotlights' advertisements. -->
                 <div class="contents">
                     <div class="spotlight">
