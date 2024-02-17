@@ -82,7 +82,7 @@ let displayForecast = function (data) {
     */
 
     const forecastDiv = document.createElement("div");
-    forecastDiv.setAttribute("class", "forecast");
+    forecastDiv.setAttribute("class", "forecast hidden");
 
     let hr = document.createElement("hr");
     forecastDiv.appendChild(hr);

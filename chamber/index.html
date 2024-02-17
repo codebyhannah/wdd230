@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="styles/extra-large.css">
     <script src="scripts/getDates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/weather.js" defer> </script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-        <div class="hero">
+        <div id="hero" class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="https://placehold.co/400x200">
                 <source media="(max-width: 800px)" srcset="https://placehold.co/800x400">
@@ -48,6 +49,12 @@
             <a href="join.html" class="join"></a>
         </div>
         <div class="contents">
+            <section id="about" class="card">
+                <h2>Our Purpose</h2>
+                <div class="contents">
+                    <p>The Boise Chamber of Commerce promotes business growth and economic development through business advocacy, networking and leadership opportunities, promoting individual businesses, and events for the whole community. Our mission is to serve and expand our business community and facilitate public and private partnerships to build a vibrant economy, a prosperous community, and maintain the region's quality of life.</p>
+                </div>
+            </section>
             <section id="events" class="card">
                 <h2>Current Events</h2>
                 <div class="contents">
