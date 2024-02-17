@@ -2,12 +2,12 @@ const currentWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=4
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=43.61&lon=-116.20&appid=4d8ad0fd2f2cf1fbd37af642f19933c9&units=imperial";
 
-async function apiFetch(url, displayResults, location, iconSize, date, dateLocation, time, dateHType, descHType) {
+async function apiFetch(url, displayResults, location, iconSize, date, time, dateHType, descHType, wrapperClass) {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            displayResults(data, location, iconSize, date, dateLocation, time, dateHType, descHType);
+            displayResults(data, location, iconSize, date, time, dateHType, descHType, wrapperClass);
         } else {
             throw Error(await response.text());
         }
@@ -16,9 +16,12 @@ async function apiFetch(url, displayResults, location, iconSize, date, dateLocat
     }
 }
 
-let displayCurrentWeather = function (data, location, iconSize, date, dateLocation, time, dateHType, descHType) {
+let displayCurrentWeather = function (data, location, iconSize, date, time, dateHType, descHType, wrapperClass) {
+    const wrapper = document.createElement("div");
+    wrapper.setAttribute("class", wrapperClass);
 
-    const weatherDiv = document.querySelector(location);
+    const weatherDiv = document.createElement("div");
+    weatherDiv.setAttribute("class", "weather");
     const weatherIcon = document.createElement("img");
     const details = document.createElement("div");
     const weatherDesc = document.createElement(descHType);
@@ -37,31 +40,39 @@ let displayCurrentWeather = function (data, location, iconSize, date, dateLocati
     tempF.innerHTML = `${currentTempF}`;
     tempC.innerHTML = `${currentTempC}`;
 
+    const dateDiv = document.createElement("div");
+    
     if (date != "") {
+        
+        dateDiv.setAttribute("class", "date");
         const dateElem = document.createElement(dateHType);
         let day = `${dayOfWeek(date.getDay())} ${month(date.getMonth())} ${date.getDate()}, ${date.getFullYear()}`;
         dateElem.innerHTML = day;
-        dateLocation.appendChild(dateElem);
+        dateDiv.appendChild(dateElem);
+        location.appendChild(dateDiv);
     }
 
     if (time != "") {
         const timeElem = document.createElement("p");
         timeElem.innerHTML = `${time}`;
-        dateLocation.appendChild(timeElem);
+        weatherDiv.appendChild(timeElem);
     }
+
     weatherDiv.appendChild(weatherIcon);
     details.appendChild(weatherDesc);
     details.appendChild(tempF);
     details.appendChild(tempC);
     weatherDiv.appendChild(details);
+    
+    wrapper.appendChild(weatherDiv);
+
+    location.appendChild(wrapper);
 }
 
 let displayForecast = function (data) {
-    const forecastDiv = document.querySelector("div.forecast");
-
     // The data in data.list[0].dt from the JSON retrieved from the openweathermap.org five day weather forecast api is incorrect. It gives the date in miliseconds since the Unix Epoch, but for some reason it is giving me a date from the 1970's. I have triple checked conversion, and tried online converters as well. All give the same result. The data in data.list[0].dt_txt, however, gives the correct date and year when I use new Date() on it. Therefore, all date related calculations will be done with data.list[0].dt_txt instead of data.list[0].dt.
     /*
-    // Example of how wrong it is:
+    // Example of how wrong it is (compare dates in console):
     console.log("wrong")
     console.log(data.list[0].dt);
     console.log(new Date(data.list[0].dt));
@@ -70,41 +81,51 @@ let displayForecast = function (data) {
     console.log(new Date(data.list[0].dt_txt));
     */
 
-    let forecast = document.createElement("h3");
-    forecast.innerHTML = "Forecast"
+    const forecastDiv = document.createElement("div");
+    forecastDiv.setAttribute("class", "forecast");
+
     let hr = document.createElement("hr");
+    forecastDiv.appendChild(hr);
 
-    forecastDiv.appendChild(forecast);
-    //forecastDiv.appendChild(hr);
+    let forecastHeading = document.createElement("h3");
+    forecastHeading.innerHTML = `Forecast<span class="arrow"></span>`;
+    forecastHeading.setAttribute("id", "forecastButton");
 
-    let i = 0
-    data.list.forEach(forecast => {
+    forecastDiv.appendChild(forecastHeading);
+
+    for(let i = 0; i < 24; i++) {
+        let forecast = data.list[i];
         let date = new Date(forecast.dt_txt);
         if (date.getHours() == 6 || date.getHours() == 12)  {
             let time = ``;
 
             if (date.getHours() == 6) {
-                time = `Morning: ${date.getHours()}:00 AM`;
+                time = `${date.getHours()}:00 AM`;
             }else if (date.getHours() == 12) {
-                time = `Noon: ${date.getHours()}:00 PM`;
+                time = `${date.getHours()}:00 PM`;
             }
 
             let dispDate = "";
+            let forecastClass = "secWeather hidden";
 
             if ((i-2 >= 0 && new Date(data.list[i-2].dt_txt).getHours() == 6) &&(new Date(data.list[i-2].dt_txt).getDay() == date.getDay())) {
                 dispDate = "";
+                forecastClass = "secWeather noon";
             } else {
                 dispDate = new Date(forecast.dt_txt)
-                let hr2 = document.createElement("hr");
-                forecastDiv.appendChild(hr2);
+                forecastClass = "secWeather morn";
+                let hr = document.createElement("hr");
+                forecastDiv.appendChild(hr);
             }
-            
-            displayCurrentWeather(forecast, "div.forecast", "", dispDate, forecastDiv, time, "h4", "h5");
-        }
-        i++;
-    });
-}
 
+            displayCurrentWeather(forecast, forecastDiv, "", dispDate, time, "h4", "h5", forecastClass);
+        }
+    };
+
+    document.querySelector("#weather .contents").appendChild(forecastDiv);
+    
+    showForecast();
+}
 
 let dayOfWeek = function (day) {
     switch (day) {
@@ -154,6 +175,16 @@ let month = function (month) {
     }
 }
 
-apiFetch(currentWeatherUrl, displayCurrentWeather, "div.weather", "@2x", new Date(), document.querySelector("#weather .date"), "", "h3", "h4");
+function showForecast() {
+    let forecastButton = document.querySelector("#forecastButton");
+    let divForecast = document.querySelector(".forecast");
+
+    forecastButton.addEventListener("click", () => {
+        divForecast.classList.toggle("hidden");
+        forecastButton.classList.toggle("open");
+    })
+}
+
+apiFetch(currentWeatherUrl, displayCurrentWeather, document.querySelector("#weather .contents"), "@2x", new Date(), "", "h3", "h4", "mainWeather");
 
 apiFetch(forecastUrl, displayForecast);
