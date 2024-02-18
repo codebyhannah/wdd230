@@ -7,7 +7,7 @@
             "url": "https://notarealurl.html",
             "image": "https://placehold.co/250x125/white/grey",
             "memLevel": "Gold",
-            "other": "This is a fake company."
+            "spotlightInfo": "This is a fake company."
         },
         {
             "name": "Fake Company Number 2",
@@ -16,7 +16,7 @@
             "url": "https://notarealurlatall.html",
             "image": "https://placehold.co/150x100/white/grey",
             "memLevel": "Bronze",
-            "other": "This is also a fake company."
+            "spotlightInfo": "This is also a fake company."
         },
         {
             "name": "Fake Company Number 3",
@@ -25,7 +25,7 @@
             "url": "https://totallyfakeurl.html",
             "image": "https://placehold.co/100/white/grey",
             "memLevel": "Silver",
-            "other": "This is yet another fake company."
+            "spotlightInfo": "This is yet another fake company."
         },
         {
             "name": "Fake Company Number 4",
@@ -34,7 +34,7 @@
             "url": "https://stillafakeurl.html",
             "image": "https://placehold.co/225x150/white/grey",
             "memLevel": "Gold",
-            "other": "Fake company stil."
+            "spotlightInfo": "Fake company stil."
         },
         {
             "name": "Fake Company Number 5",
@@ -43,7 +43,7 @@
             "url": "https://sofakeurl.html",
             "image": "https://placehold.co/200x75/white/grey",
             "memLevel": "Non-Profit",
-            "other": "This is a very fake company."
+            "spotlightInfo": "This is a very fake company."
         },
         {
             "name": "Fake Company Number 6",
@@ -52,7 +52,7 @@
             "url": "https://notrealnopeurl.html",
             "image": "https://placehold.co/200x100/white/grey",
             "memLevel": "Bronze",
-            "other": "An exceedingly fake company."
+            "spotlightInfo": "An exceedingly fake company."
         },
         {
             "name": "Fake Company Number 7",
@@ -61,7 +61,7 @@
             "url": "https://fakeurlyall.html",
             "image": "https://placehold.co/180x120/white/grey",
             "memLevel": "Silver",
-            "other": "This fake company is so fake."
+            "spotlightInfo": "This fake company is so fake."
         }
     ]
 }

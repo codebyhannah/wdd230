@@ -335,7 +335,7 @@ footer .devInfo {
     font-size: .9rem;
 }
 
-#weather hr {
+#weather hr, #spotlight hr {
     margin-bottom: .5rem;
     height: 2px;
     border: none;
@@ -421,14 +421,13 @@ footer .devInfo {
     border-radius: 10px;
     padding: 10px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 #banner .desc p {
     color: var(--color-one);
     line-height: 1.6rem;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
     width: 90%;
     margin: 0 auto;
 }
@@ -446,8 +445,8 @@ footer .devInfo {
     border: none;
     color: var(--color-six);
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     text-align: center;
     margin: 5px;
     padding-bottom: 4px;
@@ -467,6 +466,27 @@ footer .devInfo {
     padding: 4px;
     border-radius: 10px;
     text-wrap: nowrap;
+}
+
+/* ----- Spotlights ----- */
+
+#spotlight section .contents {
+    display: flex;
+}
+
+#spotlight section img {
+    max-width: 150px;
+    max-height: 135px;
+    width: auto;
+}
+
+#spotlight hr {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+#spotlight .contents section:last-child hr {
+    display: none;
 }
 
 /* ----- Gallery ----- */

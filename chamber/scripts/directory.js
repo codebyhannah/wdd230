@@ -4,7 +4,6 @@ const membersUrl = "https://codebyhannah.github.io/wdd230/chamber/data/members.j
 async function getMembers() {
     const response = await fetch(membersUrl);
     const data = await response.json();
-    console.log(data);
     displayMembers(data);
 }
 
