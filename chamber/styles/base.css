@@ -106,20 +106,20 @@ ul.menuLinks.open {
     color: var(--color-six);
 }
 
-nav li {
+#topNav li {
     display: block;
     list-style-type: none;
     padding: 0;
 }
 
-nav a {
+#topNav a {
     display: block;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
 }
 
-nav a:hover, nav a.active {
+#topNav a:hover, #topNav a.active {
     background-color: var(--color-three);
 }
 
@@ -491,13 +491,13 @@ footer .devInfo {
 
 /* ----- Gallery ----- */
 
-.gallery h2 {
+.gallery h2, .directory h2 {
     font-size: 2rem;
     padding-left:2rem;
     margin-bottom: .5rem;
 }
 
-.gallery hr {
+.gallery hr, .directory hr {
     margin-bottom: 1.5rem;
     height: .3rem;
     border: none;
@@ -605,6 +605,10 @@ main div.contents.directory {
     display: grid;
     grid-template-columns: auto min-content;
     grid-gap: 0;
+}
+
+.directory h2 {
+    text-align: center;
 }
 
 .direcButtons {

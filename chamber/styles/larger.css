@@ -63,14 +63,10 @@
         grid-row: 1/2;
     }
     
-    div.side .card:not(.card:last-of-type) {
+    div.side .card:not(.card:last-child) {
         margin-bottom: 1.5rem;;
     }
-
-    #weather {
-        height: fit-content;
-    }
-
+    
     #navCard {
         height: fit-content;
         padding-right: 10px;
@@ -84,6 +80,12 @@
         
     #navCard h4 {
         padding-left: 40px;
+    }
+
+    /* ----- Weather ----- */
+    
+    #weather {
+        height: fit-content;
     }
 
     /* ----- Gallery ----- */
