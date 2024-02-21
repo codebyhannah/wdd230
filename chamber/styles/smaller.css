@@ -9,7 +9,6 @@
         content: "\a";
         white-space: pre;
     }
-
 }
 
 @media only screen and (max-width: 29rem) {
@@ -20,6 +19,10 @@
     div.contactUs div.logo {
         display: flex;
         justify-content: center;
+    }
+    .directory h2 {
+        text-align: left;
+        width: fit-content;
     }
 }
 

@@ -151,6 +151,10 @@ a.join {
     text-decoration: none;
 }
 
+a.join.open {
+    top: 18.7rem;
+}
+
 a.join::before {
     content: "Join Today";
 }
@@ -193,7 +197,7 @@ main .contents.thank h2{
     padding: 5px;
 }
 
-.card p:not(#weather p) {
+.card p:not(#weather p), .form .side h4 {
     padding-left: 15px;
 }
 
@@ -247,6 +251,7 @@ footer {
 
 footer h2 {
     font-size: 2rem;
+    padding-bottom: .5rem;
 }
 
 footer h2 .smaller {
@@ -292,6 +297,10 @@ footer .devInfo {
     grid-column: 1/3;
     text-align: center;
     margin-top: 1rem;
+}
+
+footer .address p {
+    padding-bottom: .2rem;
 }
 
 /* ----- Weather ----- */
@@ -594,6 +603,19 @@ form label input:required {
 
 form label input:required:valid {
     border-left: 6px solid green;
+}
+
+.form .side h4 {
+    padding-bottom: .1rem;
+}
+
+.form .side ul {
+    padding-left: 30px;
+    font-size: .9rem;
+}
+
+.form .side li {
+    padding-bottom: .2rem;
 }
 
 /* ----- Directory ----- */

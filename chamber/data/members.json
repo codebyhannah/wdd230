@@ -1,67 +1,67 @@
 {
     "members": [
         {
-            "name": "Fake Company Number 1",
-            "address": "12 fakestreet St.",
+            "name": "Empire Technical",
+            "address": "122 Widstrake Court Boise, Idaho",
             "phoneNum": "+1 (123) 123-1234",
-            "url": "https://notarealurl.html",
+            "url": "https://empiretechnical.fakeurl",
             "image": "https://placehold.co/250x125/white/grey",
             "memLevel": "Gold",
-            "spotlightInfo": "This is a fake company."
+            "spotlightInfo": "Empire Technical provides customizable tools and software for integration, automation, and optimization of your online business. With shopping carts and sales automization, tracking and analysis of site visits, sales, and more, and other software to streamline functionality and user experience, Empire Technical can help your business grow."
         },
         {
-            "name": "Fake Company Number 2",
-            "address": "13 fakestreet St.",
+            "name": "Jackson & Fife",
+            "address": "253 Sentry Rd. Boise, Idaho",
             "phoneNum": "(123) 123-1235",
-            "url": "https://notarealurlatall.html",
+            "url": "https://jacksonandfife.fakeurl",
             "image": "https://placehold.co/150x100/white/grey",
-            "memLevel": "Bronze",
-            "spotlightInfo": "This is also a fake company."
-        },
-        {
-            "name": "Fake Company Number 3",
-            "address": "14 fakestreet St.",
-            "phoneNum": "(123) 123-1236",
-            "url": "https://totallyfakeurl.html",
-            "image": "https://placehold.co/100/white/grey",
             "memLevel": "Silver",
-            "spotlightInfo": "This is yet another fake company."
+            "spotlightInfo": "Crafters of fine jewelry for all occasions for over 57 years. Jackson & Fife are dedicated to creating beautiful pieces of the utmost quality and elegance. Whether with simple or intricate designs, every item is made with dedication, precision, and pride."
         },
         {
-            "name": "Fake Company Number 4",
-            "address": "15 fakestreet St.",
+            "name": "Estelle Boutique",
+            "address": "14 W Domino Rd. Boise, Idaho",
+            "phoneNum": "(123) 123-1236",
+            "url": "https://estelleboutique.fakeurl",
+            "image": "https://placehold.co/100/white/grey",
+            "memLevel": "Bronze",
+            "spotlightInfo": "Everyone's a star with Estelle Boutique! A fusion of retro and modern styles, our eye-catching items show off your bright side while looking classy and chic."
+        },
+        {
+            "name": "Oasis Catering",
+            "address": "137 N Treeline Rd. Boise, Idaho",
             "phoneNum": "+1 (123) 123-1237",
-            "url": "https://stillafakeurl.html",
+            "url": "https://oasiscatering.fakeurl",
             "image": "https://placehold.co/202x135/white/grey",
             "memLevel": "Gold",
-            "spotlightInfo": "Fake company still."
+            "spotlightInfo": "Oasis Catering offers food, drinks, and services for all occasions, from birthday parties to black tie events. With our basic, deluxe, and luxury packages, you can find the catering, and the prices, to suit your needs."
         },
         {
-            "name": "Fake Company Number 5",
-            "address": "16 fakestreet St.",
+            "name": "Giving Hands",
+            "address": "536 Henderson Way Boise, Idaho",
             "phoneNum": "(123) 123-1238",
-            "url": "https://sofakeurl.html",
+            "url": "https://handsthatgive.fakeurl",
             "image": "https://placehold.co/200x75/white/grey",
             "memLevel": "Non-Profit",
-            "spotlightInfo": "This is a very fake company."
+            "spotlightInfo": "Giving Hands is a non-profit organization dedicated to giving families and children in need a second chance and a helping hand. Through donations of food, clothing, toiletries, toys, and educational materials, as well as the efforts of our volunteers at our women and children's shelters, we are able to help hundreds of families and children every year."
         },
         {
-            "name": "Fake Company Number 6",
-            "address": "17 fakestreet St.",
+            "name": "Riverway Sports",
+            "address": "47 Eston Dr. Boise Idaho",
             "phoneNum": "+1 (123) 123-1239",
-            "url": "https://notrealnopeurl.html",
+            "url": "https://riverwaysports.fakeurl",
             "image": "https://placehold.co/200x100/white/grey",
             "memLevel": "Bronze",
-            "spotlightInfo": "An exceedingly fake company."
+            "spotlightInfo": "Riverway Sports sells sportswear and equipment for all manner of watersports, whether diving, surfing, swimming, or rafting. We also provide a whitewater rafting rental service and guided expeditions down the Boise River."
         },
         {
-            "name": "Fake Company Number 7",
-            "address": "18 fakestreet St.",
+            "name": "Emerald Lawnworks",
+            "address": "158 Cress Way Boise, Idaho",
             "phoneNum": "+1 (123) 123-1230",
-            "url": "https://fakeurlyall.html",
+            "url": "https://emeraldlawnworks.fakeurl",
             "image": "https://placehold.co/180x120/white/grey",
             "memLevel": "Silver",
-            "spotlightInfo": "This fake company is so fake."
+            "spotlightInfo": "Emerald Lawnworks prides ourselves on a job well done, whether for home or commercial lawn and garden maintenance. We provide landscaping, mowing, tree and bush trimming, mulching, sprinkler installation and repair, and weed and pest control services. We'll keep your lawn Emerald green."
         }
     ]
 }

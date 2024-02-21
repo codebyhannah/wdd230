@@ -30,7 +30,9 @@ function displaySpotlights(data) {
 
         let name = member.name;
         let spotlightInfo = member.spotlightInfo;
-        let url = member.url;
+        //let url = member.url;
+        // Would use the actual url, but as none of these companies actually exist, those urls lead nowhere.
+        let url = "#";
         let imageSrc = member.image;
 
         section.innerHTML = `<div class="contents"><img src="${imageSrc}" alt="${name}"><div><h3 class="name"><a href="${url}">${name}</a></h3><p>${spotlightInfo}</p></div></div>`;
