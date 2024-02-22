@@ -5,7 +5,7 @@
             "address": "122 Widstrake Court Boise, Idaho",
             "phoneNum": "+1 (123) 123-1234",
             "url": "https://empiretechnical.fakeurl",
-            "image": "https://placehold.co/250x125/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/empire-technical.webp",
             "memLevel": "Gold",
             "spotlightInfo": "Empire Technical provides customizable tools and software for integration, automation, and optimization of your online business. With shopping carts and sales automization, tracking and analysis of site visits, sales, and more, and other software to streamline functionality and user experience, Empire Technical can help your business grow."
         },
@@ -14,7 +14,7 @@
             "address": "253 Sentry Rd. Boise, Idaho",
             "phoneNum": "(123) 123-1235",
             "url": "https://jacksonandfife.fakeurl",
-            "image": "https://placehold.co/150x100/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/jackson-and-fife.webp",
             "memLevel": "Silver",
             "spotlightInfo": "Crafters of fine jewelry for all occasions for over 57 years. Jackson & Fife are dedicated to creating beautiful pieces of the utmost quality and elegance. Whether with simple or intricate designs, every item is made with dedication, precision, and pride."
         },
@@ -23,7 +23,7 @@
             "address": "14 W Domino Rd. Boise, Idaho",
             "phoneNum": "(123) 123-1236",
             "url": "https://estelleboutique.fakeurl",
-            "image": "https://placehold.co/100/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/estelle-boutique.webp",
             "memLevel": "Bronze",
             "spotlightInfo": "Everyone's a star with Estelle Boutique! A fusion of retro and modern styles, our eye-catching items show off your bright side while looking classy and chic."
         },
@@ -32,7 +32,7 @@
             "address": "137 N Treeline Rd. Boise, Idaho",
             "phoneNum": "+1 (123) 123-1237",
             "url": "https://oasiscatering.fakeurl",
-            "image": "https://placehold.co/202x135/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/oasis-catering.webp",
             "memLevel": "Gold",
             "spotlightInfo": "Oasis Catering offers food, drinks, and services for all occasions, from birthday parties to black tie events. With our basic, deluxe, and luxury packages, you can find the catering, and the prices, to suit your needs."
         },
@@ -41,16 +41,16 @@
             "address": "536 Henderson Way Boise, Idaho",
             "phoneNum": "(123) 123-1238",
             "url": "https://handsthatgive.fakeurl",
-            "image": "https://placehold.co/200x75/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/giving-hands.webp",
             "memLevel": "Non-Profit",
-            "spotlightInfo": "Giving Hands is a non-profit organization dedicated to giving families and children in need a second chance and a helping hand. Through donations of food, clothing, toiletries, toys, and educational materials, as well as the efforts of our volunteers at our women and children's shelters, we are able to help hundreds of families and children every year."
+            "spotlightInfo": "Giving Hands is a non-profit organization dedicated to giving children and familes in need a second chance and a helping hand. Through donations of food, clothing, toiletries, toys, and educational materials, as well as the efforts of our volunteers at our women and children's shelters, we are able to help hundreds of children and familes every year."
         },
         {
             "name": "Riverway Sports",
             "address": "47 Eston Dr. Boise Idaho",
             "phoneNum": "+1 (123) 123-1239",
             "url": "https://riverwaysports.fakeurl",
-            "image": "https://placehold.co/200x100/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/riverway-sports.webp",
             "memLevel": "Bronze",
             "spotlightInfo": "Riverway Sports sells sportswear and equipment for all manner of watersports, whether diving, surfing, swimming, or rafting. We also provide a whitewater rafting rental service and guided expeditions down the Boise River."
         },
@@ -59,7 +59,7 @@
             "address": "158 Cress Way Boise, Idaho",
             "phoneNum": "+1 (123) 123-1230",
             "url": "https://emeraldlawnworks.fakeurl",
-            "image": "https://placehold.co/180x120/white/grey",
+            "image": "https://codebyhannah.github.io/wdd230/chamber/images/member-logos/emerald-lawnworks.webp",
             "memLevel": "Silver",
             "spotlightInfo": "Emerald Lawnworks prides ourselves on a job well done, whether for home or commercial lawn and garden maintenance. We provide landscaping, mowing, tree and bush trimming, mulching, sprinkler installation and repair, and weed and pest control services. We'll keep your lawn Emerald green."
         }

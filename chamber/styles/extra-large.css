@@ -1,8 +1,7 @@
-@media only screen and (min-width: 68.76rem) {
+@media only screen and (min-width: 62.5rem) {
     /* Prevents join button from going outside 
     of hero image boundaries */
     a.join {
-        left: calc((100vw - 1100px)/2 + 1.5rem);
+        left: calc((100vw - 1000px)/2 + 1.5rem);
     }
-
 }

@@ -82,6 +82,18 @@
         padding-left: 40px;
     }
 
+    /* ----- Events ----- */
+
+    #events .details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #events .details img:not(:only-child) {
+        padding-bottom: 0rem;
+    }
+
     /* ----- Weather ----- */
     
     #weather {

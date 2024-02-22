@@ -12,8 +12,8 @@
     --general-font: "Merriweather", "Lucida Console", "Times New Roman", Trebuchet, Serif;
 }
 
-img.placeholder {
-    opacity: 0.5; /* just for placeholder */
+img.logo {
+    width: 100px;
 }
 
 * {
@@ -126,11 +126,15 @@ ul.menuLinks.open {
 .hero {
     max-width: 1100px;
     margin: 0 auto;
+    background-color: var(--color-four);
+    text-align: center;
 }
 
 .hero img {
     width: 100%;
+    max-width: 1000px;
     max-height: 25rem;
+    margin: 0 auto;
 }
 
 main {
@@ -301,6 +305,30 @@ footer .devInfo {
 
 footer .address p {
     padding-bottom: .2rem;
+}
+
+/* ----- Events ----- */
+
+#events .details {
+    display: block;
+    text-align: center;
+    padding-left: 15px;
+}
+
+#events p {
+    text-align: center;
+}
+
+#events p:last-child {
+    padding-bottom: 0;
+}
+
+#events .details img {
+    padding-bottom: .5rem;
+}
+
+#events .event:not(:last-child) {
+    padding-bottom: .5rem;
 }
 
 /* ----- Weather ----- */
@@ -539,6 +567,10 @@ footer .address p {
     font-size: 1.125rem;
 }
 
+#attractions ul {
+    padding-left: 15px;
+}
+
 /* ----- Form ----- */
 
 .contents.form .side {
@@ -614,7 +646,7 @@ form label input:required:valid {
     font-size: .9rem;
 }
 
-.form .side li {
+.form .side li, #attractions li {
     padding-bottom: .2rem;
 }
 
