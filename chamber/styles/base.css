@@ -271,6 +271,7 @@ div.logo {
 
 div.logo img {
     margin-right: 1rem;
+    background-color: var(--color-five);
 }
 
 footer a{
