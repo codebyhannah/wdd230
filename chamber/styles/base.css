@@ -508,13 +508,14 @@ footer .address p {
 /* ----- Spotlights ----- */
 
 #spotlight section .contents {
-    display: flex;
+    display: block;
+    text-align: center;
 }
 
 #spotlight section img {
+    height: 100%;
     max-width: 150px;
     max-height: 135px;
-    width: auto;
 }
 
 #spotlight hr {
